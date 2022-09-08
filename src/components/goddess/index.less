@@ -1,0 +1,26 @@
+.goddess {
+    display         : inline-block;
+    width           : 200px;
+    height          : 200px;
+    position        : absolute;
+
+    img {
+        max-width: 100%;
+    }
+
+    &.failed {
+        bottom   : 0;
+        top: auto !important;
+        animation: die 3s ease-out;
+    }
+}
+
+@keyframes die {
+    0% {
+        top: inherit;
+    }
+
+    100% {
+        bottom: 0px;
+    }
+}

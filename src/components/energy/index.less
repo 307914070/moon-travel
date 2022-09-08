@@ -1,0 +1,27 @@
+.energy {
+    width: 400px;
+    height: 30px;
+    margin: 150px auto;
+    border: 1px solid #eee;
+    box-shadow: 0 0 15px #eee;
+    position: relative;
+    border-radius: 6px;
+    display: flex;
+    align-items: center;
+
+    .percent {
+        background-color: bisque;
+        height: 28px;
+        margin: 1px;
+        border-radius: 6px;
+    }
+    ::before {
+        position: absolute;
+        left: 0;
+        right: 0;
+        top: -32px;
+        content: attr(data-text);
+        color: white;
+        text-align: center;
+    }
+}
